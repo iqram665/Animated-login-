@@ -1,0 +1,104 @@
+/* Full page configuration */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0d0d13; /* Premium dark background */
+}
+
+/* Glassmorphism & Glowing Border Setup */
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid #e46033; /* Glow template color matching code screen */
+    box-shadow: 0 0 25px #e46033; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Form structure context layout */
+.form-box {
+    width: 80%;
+    color: #fff;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input design styling with floating effect */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    transition: .5s;
+}
+
+/* Input label animations toggling input state focus */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    color: #e46033;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom: 2px solid #e46033;
+}
+
+/* Button UI configurations layout */
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #e46033;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px #e46033;
+    background: #ff7647;
+}
